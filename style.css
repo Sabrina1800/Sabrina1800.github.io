@@ -1,13 +1,27 @@
 @import "compass/css3";
 
+body { margin: 0; }
+
+#logobar {
+  background-color: #adadad;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 #pics {
   padding-left: 0;
   width: 60%;
+  margin-top: 80px;
   margin-left: 20%;
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
   justify-content: center;
+  margin-bottom: 0;
 }
 #pics img {
   max-width: 100%;
@@ -15,7 +29,7 @@
   margin-top: -20px;
 }
 
-#lastpic { margin-bottom: 100px; }
+#lastpic { margin-bottom: 80px; }
 
 #navbar {
   display: flex;
@@ -28,12 +42,17 @@
   width: 100%;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 0;
+}
 
+#navbar li {
+  padding: 10px 30px 10px 30px;
 }
 
 #navbar img {
   max-width: 100%;
   height: auto;
   width: 70%;
+ 
 }
 

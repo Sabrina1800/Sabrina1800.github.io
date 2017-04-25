@@ -1,0 +1,93 @@
+@import "compass/css3";
+@font-face {
+    font-family: Lucida sans typewriter;
+    src: url(img/myfont.ttf)
+}
+
+body { margin: 0; }
+
+#searchbar {
+  margin-top: 100px;
+}
+
+#searchbar p {
+  text-align: center;
+  font-family: Lucida sans typewriter;
+  font-weight: bold;
+}
+
+input[type=text] {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('img/searchicon.png');
+    background-position: -5px -5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#logobar {
+  background-color: #adadad;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#tags {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px 25% 20px 25%;
+}
+
+#tags li {
+  background: #454545;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  
+  border-radius: 4px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-family: Lucida sans typewriter;
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #adadad;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+#navbar li {
+  padding: 10px 30px 10px 30px;
+}
+
+#navbar img {
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+ 
+}
+
