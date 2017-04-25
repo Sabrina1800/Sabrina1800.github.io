@@ -1,0 +1,39 @@
+@import "compass/css3";
+
+#pics {
+  padding-left: 0;
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+#pics img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -20px;
+}
+
+#lastpic { margin-bottom: 100px; }
+
+#navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #adadad;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+#navbar img {
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+}
+
