@@ -4,7 +4,7 @@
     src: url(img/myfont.ttf)
 }
 
-body { margin: 0; }
+body { margin: 0; font-size: 100%; }
 
 #searchbar {
   margin-top: 100px;
@@ -32,13 +32,16 @@ input[type=text] {
 }
 
 input[type=submit] {
-  border: none;
-  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: black;
   cursor: pointer;
   font-family: Lucida sans typewriter;
-  font-size: 1.5em;
-  width: 60%;
-  margin: 20px 0 0 20%;
+  font-size: 1.25em;
+  color: white;
+  width: 10%;
+  margin: 20px 0 0 45%;
+  padding: 5px;
 }
 
 #logobar {

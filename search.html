@@ -11,10 +11,10 @@
 
     <div id="logobar"><img src="img/logo.png"></div>
 
-    <form id="searchbar">
-      <p>Search Instagram for Artify Projects</p>
+    <div id="searchbar">
+      <p>Search on Instagram:</p>
       <input type="text" name="search" placeholder="#artifykiwi">
-      <input type="submit" value="Search" />
+      <input type="submit" value="GO" />
     </div>
 
     <!-- <ul id="tags">
@@ -34,13 +34,16 @@
      <li><a href="#"><img src="img/account.png"></a></li>
     </ul>
 
-    <script src="instafeed.min.js"></script>
+    <!-- access_token=499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d -->
 
-    <script>
+    <script type="text/javascript" src="instafeed.min.js"></script>
+
+    <script type="text/javascript">
       var feed = new Instafeed({
         get: 'tagged',
-        tagName: 'TAG', Ex: // 'cat'
-        accessToken: '499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d'
+        tagName: 'artifykiwi',  // 'cat'
+        clientId: '0e159430fc854eeeb12bd7ce710d7b3e',
+        accessToken: '499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d',
       });
       feed.run();
     </script>
