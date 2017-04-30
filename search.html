@@ -30,15 +30,22 @@
 
     <ul id="navbar">
      <li><a href="index.html"><img src="img/home.png"></a></li>
-     <li><a href="#"><img src="img/search.png"></a></li>
-     <li><a href="#"><img src="img/account.png"></a></li>
+     <li><a href="search.html"><img src="img/search.png"></a></li>
+     <li><a href="login.html"><img src="img/account.png"></a></li>
     </ul>
 
     <!-- access_token=499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d -->
 
-    <script type="text/javascript" src="instafeed.min.js"></script>
+    <script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
 
     <script type="text/javascript">
+
+      // require(["node_modules/instafeed.js/instafeed.js"], function(Instafeed) {
+
+      // });
+
+      // var Instafeed = require("instafeed");
+
       var feed = new Instafeed({
         get: 'tagged',
         tagName: 'artifykiwi',  // 'cat'
