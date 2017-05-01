@@ -13,8 +13,8 @@
 
     <div id="searchbar">
       <p>Search on Instagram:</p>
-      <input type="text" name="search" placeholder="#artifykiwi">
-      <input type="submit" value="GO" />
+      <input id="srch" type="search" name="search" placeholder="#artifykiwi" onsearch="myFunction()">
+      <button id="btn" onclick="myFunction()">GO</button>
     </div>
 
     <!-- <ul id="tags">
@@ -38,6 +38,8 @@
 
     <script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
 
+   <!--  <script type="text/javascript" src="//cdn.rawgit.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script> -->
+
     <script type="text/javascript">
 
       // require(["node_modules/instafeed.js/instafeed.js"], function(Instafeed) {
@@ -45,15 +47,43 @@
       // });
 
       // var Instafeed = require("instafeed");
+      // function myFunction() {
+      //   var x = document.getElementById("srch").value;
+      //   console.log('x: ' + x);
+      //   document.getElementById("instafeed").innerHTML = x;
+      // }
 
-      var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'artifykiwi',  // 'cat'
-        clientId: '0e159430fc854eeeb12bd7ce710d7b3e',
-        accessToken: '499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d',
-      });
-      feed.run();
+      document.getElementById("srch").addEventListener("search", myFunction);
+      document.getElementById("btn").onclick = function() {myFunction()};
+
+      function myFunction() {
+        var x = document.getElementById("srch");
+        // document.getElementById("instafeed").innerHTML = "You are searching for: " + x.value;
+        
+        var feed = new Instafeed({
+          get: 'tagged',
+          tagName: x.value ,  // 'cat'
+          clientId: '0e159430fc854eeeb12bd7ce710d7b3e',
+          accessToken: '499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d',
+
+        });
+        feed.run();
+
+      }
+      
+      
+
+
+      // var userFeed = new Instafeed({
+      //   get: 'user',
+      //   userId: '499695302',
+      //   accessToken: '499695302.1677ed0.44c51f486e0b49a787f5bc9cd2efb7ae'
+      // });
+      // userFeed.run();
+
     </script>
+
+
 
   </body>
 </html>

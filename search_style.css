@@ -16,7 +16,7 @@ body { margin: 0; font-size: 100%; }
   font-weight: bold;
 }
 
-input[type=text] {
+input[type=search] {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -31,7 +31,7 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
 }
 
-input[type=submit] {
+button {
   border: 2px solid black;
   border-radius: 4px;
   background-color: black;
@@ -100,5 +100,18 @@ input[type=submit] {
   height: auto;
   width: 70%;
  
+}
+
+#instafeed {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 50px 10% 200px 10%;
+  justify-content: space-around;
+
+} 
+
+#instafeed a img {
+  width: 200px;
 }
 
