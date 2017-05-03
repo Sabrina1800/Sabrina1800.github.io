@@ -12,8 +12,8 @@
     <div id="logobar"><img src="img/logo.png"></div>
 
     <div id="searchbar">
-      <p>Search on Instagram:</p>
-      <input id="srch" type="search" name="search" placeholder="#artifykiwi" onsearch="myFunction()">
+      <p>Search Instagram Hashtags:</p>
+      <input id="srch" type="search" name="search" placeholder="artifykiwi" onsearch="myFunction()">
       <button id="btn" onclick="myFunction()">GO</button>
     </div>
 
@@ -63,7 +63,7 @@
         var feed = new Instafeed({
           get: 'tagged',
           tagName: x.value ,  
-          
+
           // get: 'user',
           // userId: '499695302',
           accessToken: '499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d',

@@ -4,7 +4,7 @@
     src: url(img/myfont.ttf)
 }
 
-body { margin: 0; font-size: 100%; }
+body { margin: 0; font-size: 100%; font-family: Lucida sans typewriter;}
 
 #logobar {
   background-color: #adadad;
@@ -41,16 +41,22 @@ body { margin: 0; font-size: 100%; }
  
 }
 
+#header {
+  text-align: center;
+  margin-top: 80px;
+}
+
 #instafeed {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
-  margin: 150px 10% 150px 10%;
+  margin: 40px 10% 150px 10%;
   justify-content: space-around;
 
 } 
 
 #instafeed a img {
   width: 200px;
+  margin: 20px 10px 20px 10px;
 }
 

@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html>
   <head>
     <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="profile_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
   </head>
   
@@ -11,7 +14,7 @@
 
     <div id="logobar"><img src="img/logo.png"></div>
 
-
+    <div id="header"><h3>My Instagram Profile</h3></div>
     <div id="instafeed"></div>
 
     <ul id="navbar">
@@ -21,6 +24,7 @@
     </ul>
 
     <!-- access_token=499695302.0e15943.a97f6c7bb6944b8cb0237cba9720c22d -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
 
@@ -47,7 +51,8 @@
         userId: '499695302',
         accessToken: '499695302.1677ed0.44c51f486e0b49a787f5bc9cd2efb7ae'
       });
-      userFeed.run();
+      userFeed.run();       
+        
 
     </script>
 
